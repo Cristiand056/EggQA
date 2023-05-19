@@ -1,6 +1,5 @@
 package javaejemplo11subfunciones;
 import java.util.Scanner;
-import static java.lang.Character.*;
 
 public class JavaEjemplo11SubFunciones {
     
