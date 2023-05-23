@@ -7,6 +7,7 @@ public class JavaEjercicio11 {
        Scanner leer = new Scanner(System.in);
        int num1, num2, op;
        boolean bandera = false;
+       String out;
        System.out.println("Ingrese el número 1");
        num1 = leer.nextInt();
        
@@ -40,9 +41,16 @@ public class JavaEjercicio11 {
                    }              
                  break;
                case 5:
-                   System.out.println("Adios!!!!");
-                    bandera = true;
-                   break;
+                   System.out.println("Desea salir (S/N)");
+                   out=leer.nextLine();
+                   if(out.equals("S")){
+                       System.out.println("Adios!!!!");
+                       bandera = true;
+                       break;
+                   }else{
+                       continue;
+                   }
+                   
                default:
                    System.out.println("Opción incorrecta");
            }
