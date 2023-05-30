@@ -42,7 +42,8 @@ public class JavaEjercicio11 {
                  break;
                case 5:
                    System.out.println("Desea salir (S/N)");
-                   out=leer.nextLine();
+                   out=leer.next();
+                   
                    if(out.equals("S")){
                        System.out.println("Adios!!!!");
                        bandera = true;
@@ -56,6 +57,5 @@ public class JavaEjercicio11 {
            }
                 
        }
-    }
-    
+    }   
 }
