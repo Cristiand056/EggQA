@@ -2,9 +2,9 @@ package javaejercicioextra18;
 import java.util.Scanner;
 
 public class JavaEjercicioExtra18 {
-
+    static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
+        
         int n = leer.nextInt();
         int [] vector = new int[n];
         vector = crearVector(n);
@@ -13,7 +13,6 @@ public class JavaEjercicioExtra18 {
     }
     public static int[] crearVector(int n){
         int[] vector = new int [n];
-        Scanner leer = new Scanner(System.in);
         for(int i=0; i < n;i++){
             vector[i] = leer.nextInt();
         }

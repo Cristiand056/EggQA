@@ -2,8 +2,9 @@ package javaejercicioextra19;
 import java.util.Scanner;
 
 public class JavaEjercicioExtra19 {
+    static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
+        
         int n = leer.nextInt();
         int [] vector1 = new int[n];
         int [] vector2 = new int[n];
@@ -15,7 +16,6 @@ public class JavaEjercicioExtra19 {
     }
     public static int[] crearVector(int n){
         int[] vector = new int [n];
-        Scanner leer = new Scanner(System.in);
         for(int i=0; i < n;i++){
             vector[i] = leer.nextInt();
         }
