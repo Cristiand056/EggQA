@@ -2,9 +2,9 @@ package javaejercicioextra23;
 import java.util.Scanner;
 
 public class JavaEjercicioExtra23 {
-
+    static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
+        
         String [][] matriz = new String[20][20];
         String word;
 

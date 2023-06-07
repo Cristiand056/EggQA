@@ -2,9 +2,8 @@ package javaejercico21;
 import java.util.Scanner;
 
 public class JavaEjercico21 {
-
+    static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner leer = new Scanner(System.in);
         int[][] Grande = new int[10][10];
         int[][] Pequenia = new int[3][3];
         
@@ -20,7 +19,7 @@ public class JavaEjercico21 {
     }
     public static int[][] crearMatriz(int N, int M) {
         int[][] matriz = new int[N][M];
-        Scanner leer = new Scanner(System.in);
+        
         for (int i = 0; i < matriz.length; i++)
         {
             for (int j = 0; j < matriz[i].length; j++)
@@ -35,7 +34,7 @@ public class JavaEjercico21 {
     }
     public static int[][] crearMatrizG(int N, int M) {
         int[][] matriz = new int[N][M];
-        Scanner leer = new Scanner(System.in);
+        
         for (int i = 0; i < matriz.length; i++)
         {
             for (int j = 0; j < matriz[i].length; j++)
