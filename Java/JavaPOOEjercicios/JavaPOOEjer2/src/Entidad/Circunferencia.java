@@ -21,7 +21,7 @@ public class Circunferencia {
     }
     
     public double area(){
-        area = Math.PI * Math.sqrt(radio);
+        area = Math.PI * Math.pow(radio,2);
         return area;
     }
     
