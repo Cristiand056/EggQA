@@ -26,7 +26,7 @@ public class Cuenta {
         return DNI_cliente;
     }
 
-    public void setDNI_cliente(long DNI_cliente) {
+        public void setDNI_cliente(long DNI_cliente) {
         this.DNI_cliente = DNI_cliente;
     }
 
