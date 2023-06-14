@@ -26,5 +26,5 @@ public class PersonaServicios {
         altura = leer.nextFloat();
 
         return new Persona(nombre, edad, sexo, peso, altura);
-    }
+    }  
 }
