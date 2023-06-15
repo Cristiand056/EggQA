@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javapooctividadesextras1.pkg2;
 
 import Entidad.Circulo;
@@ -14,10 +9,6 @@ import Entidad.Rombo;
 import Entidad.Triangulo;
 import java.util.Scanner;
 
-/**
- *
- * @author USER
- */
 public class JavaPOOCTIVIDADESeXTRAS12 {
 
     static Scanner leer = new Scanner(System.in).useDelimiter("\n");
