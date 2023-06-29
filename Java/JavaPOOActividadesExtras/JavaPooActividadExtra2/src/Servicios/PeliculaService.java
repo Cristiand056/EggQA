@@ -34,23 +34,47 @@ public class PeliculaService {
 
     public void buscarPeliculaTitulo(String pb, Pelicula[] lp) {
         System.out.println("Contiene: " + Arrays.asList(lp).contains(pb));
-        if (Arrays.asList(lp).contains(pb))
+        for (Pelicula p : lp)
+        {
+            if (p.getTitulo().equals(p))
+            {
+                System.out.println("La pelicula sí se encuentra  en el catalogo");
+                break;
+            } else
+            {
+                System.out.println("La pelicula no se encuentra  en el catalogo");
+            }
+
+        }
+        /*if (Arrays.asList(lp).contains(pb))
         {
             System.out.println("La pelicula sí se encuentra  en el catalogo");
         } else
         {
             System.out.println("La pelicula no se encuentra  en el catalogo");
-        }
+        }*/
     }
 
     public void buscarPeliculaGenero(String pb, Pelicula[] lp) {
-        System.out.println("Contiene: " + Arrays.asList(lp).contains(pb));
+        for (Pelicula p : lp)
+        {
+            if (p.getGenero().equals(p))
+            {
+                System.out.println("El genero sí se encuentra  en el catalogo");
+                break;
+            } else
+            {
+                System.out.println("El genero no se encuentra  en el catalogo");
+            }
+
+        }
+        /*System.out.println("Contiene: " + Arrays.asList(lp).contains(pb));
         if (Arrays.asList(lp).contains(pb))
         {
             System.out.println("La pelicula sí se encuentra  en el catalogo");
         } else
         {
             System.out.println("La pelicula no se encuentra  en el catalogo");
-        }
+        }*/
     }
 }
