@@ -32,13 +32,24 @@ public class AlquilerService {
     }
 
     public void AlquilerPorFecha(LocalDate fb, Alquiler[] la) {
-        if (Arrays.asList(la).contains(fb))
+
+        for (Alquiler a : la)
+        {
+            if (a.getFechaInicio() == fb)
+            {
+                System.out.println("El alquiler sí se encuentra ");
+            } else
+            {
+                System.out.println("El alquiler no se encuentra");
+            }
+        }
+        /*if (Arrays.asList(la).contains(fb))
         {
             System.out.println("El alquiler sí se encuentra ");
         } else
         {
             System.out.println("El alquiler no se encuentra");
-        }
+        }*/
     }
 
     public float totalDelservicio(Alquiler a) {
@@ -85,4 +96,4 @@ public void buscarGeneroPelicula(){
     }
     
 }
-*/
+ */
