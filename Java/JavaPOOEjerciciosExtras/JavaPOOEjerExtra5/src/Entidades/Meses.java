@@ -1,13 +1,10 @@
 package Entidades;
 
+import static Datos.Meses.mesesAnio;
 import java.util.Scanner;
 
 public class Meses {
 
-    public static String[] mesesAnio =
-    {
-        "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
-    };
     static private final int I = (int) (Math.random() * 11 + 0);
     public static String mesSecreto = mesesAnio[I];
 
@@ -17,7 +14,7 @@ public class Meses {
         while (true)
         {
             System.out.println("Ingrese el mes en minusculas");
-            System.out.println("mes secreto: "+mesSecreto);
+            System.out.println("mes secreto: " + mesSecreto);
             String mesInput = leer.next();
             mesInput = mesInput.toLowerCase();
             if (mesSecreto.equals(mesInput))
