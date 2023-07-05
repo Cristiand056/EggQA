@@ -1,7 +1,7 @@
 package Entidad;
 
-
 public class Ahorcado {
+
     public String[] palabraABuscar;
     public int cantLetrasEncotradas;
     public int cantJuagdasMax;
@@ -38,6 +38,5 @@ public class Ahorcado {
     public void setCantJuagdasMax(int cantJuagdasMax) {
         this.cantJuagdasMax = cantJuagdasMax;
     }
-    
-    
+
 }
