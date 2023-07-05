@@ -16,7 +16,96 @@ public class AhorcadoService {
         a.setPalabraABuscar(palabraABuscarP);
         System.out.println("Ingrese el número de intentos maximos");
         a.setCantJuagdasMax(leer.nextInt());
+
         return a;
+    }
+
+    private void dibujarCuadrado(int xi, int xf, int yi, int yf) {
+
+        for (int i = 0; i <= xf; i++)
+        {
+            for (int j = 0; j <= yf; j++)
+            {
+                if (i >= xi & i <= xf & j >= yi & j <= yf)
+                {
+                    System.out.print(" * ");
+                } else
+                {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println("");
+
+        }
+    }
+
+    private void dibujarLinea(int xi, int xf, int yi, int yf) {
+        if (xi == xf)
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                for (int j = 0; j < 15; j++)
+                {
+                    if (i == xi || yi == j || i == xf & yf == j)
+                    {
+                        System.out.print(" * ");
+                    } else
+                    {
+                        System.out.print("   ");
+                    }
+
+                }
+
+            }
+        }
+        if (yi == yf)
+        {
+            for (int i = xi; i <= xf; i++)
+            {
+                for (int j = 0; j < 30; j++)
+                {
+                    if ( yf == j)
+                    {
+                        System.out.println(" * ");
+                    } else
+                    {
+                        System.out.print("   ");
+                    }
+                }
+                System.out.println("");
+            }
+
+        }
+
+    }
+
+    private void dibujarAhorcado(int intentos, int aux) {
+        boolean bandera = false;
+
+        if (!bandera)
+        {
+            int intentosAux = intentos;
+            bandera = true;
+        }
+        System.out.println("hola entre, intento " + intentos);
+
+        int por = Math.round(((float) intentos / aux) * 100);
+
+        System.out.println("por " + por);
+        if (por >= 80)
+        {
+            dibujarLinea(0, 1, 6, 6);
+        } else if (por < 80 & por >= 70)
+        {
+            dibujarLinea(0, 1, 6, 6);
+            dibujarCuadrado(1, 4, 5, 7);
+        } else if (por < 75 & por >= 55)
+        {
+            dibujarLinea(0, 1, 6, 6);
+            dibujarCuadrado(1, 4, 5, 7);
+            dibujarLinea(4, 9, 6, 6);
+        }
+
     }
 
     private int longitud(Ahorcado a) {
@@ -62,9 +151,12 @@ public class AhorcadoService {
     public void juego() {
 
         Ahorcado a = crearJuego();
+        int auxIntentos = a.getCantJuagdasMax();
         String letra;
+        dibujarAhorcado(a.cantJuagdasMax, auxIntentos);
         while (a.getCantJuagdasMax() > 0 & a.getCantLetrasEncotradas() < a.getPalabraABuscar().length)
         {
+
             System.out.println("Ingrese la letra");
             letra = leer.next();
 
@@ -72,6 +164,8 @@ public class AhorcadoService {
             encontradas(letra, a);
 
             System.out.println("Número de oportunidades restantes: " + a.cantJuagdasMax);
+            dibujarAhorcado(a.cantJuagdasMax, auxIntentos);
+
         }
 
         if (a.cantJuagdasMax == 0)
