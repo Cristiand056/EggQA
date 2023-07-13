@@ -5,6 +5,7 @@ public class Ahorcado {
     public String[] palabraABuscar;
     public int cantLetrasEncotradas;
     public int cantJuagdasMax;
+    private String[] mostrar;
 
     public Ahorcado() {
     }
@@ -39,4 +40,12 @@ public class Ahorcado {
         this.cantJuagdasMax = cantJuagdasMax;
     }
 
+    public String[] getMostrar() {
+        return mostrar;
+    }
+
+    public void setMostrar(String[] mostrar) {
+        this.mostrar = mostrar;
+    }
+    
 }
