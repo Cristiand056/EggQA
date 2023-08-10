@@ -41,12 +41,10 @@ public class servicio {
     }
 
     public void mostrar() {
-        for (Map.Entry<String, String> entry : CodigoCiudad.entrySet())
+        CodigoCiudad.entrySet().forEach((entry) ->
         {
-
             System.out.println("Código: " + entry.getKey() + " Ciudad: " + entry.getValue());
-
-        }
+        });
 
     }
 
