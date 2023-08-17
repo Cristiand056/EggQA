@@ -18,6 +18,10 @@ public class data {
     {
         new Perro("mateo", "doberman", 4, 1.2),
         new Perro("lola", "husky", 3, 1.3),
+        new Perro("negro", "pitbull", 5, 1.2),
+        new Perro("sasha", "pastor aleman", 2, 1.3),
+
+        
     };
 
     public static final Persona[] personas =
