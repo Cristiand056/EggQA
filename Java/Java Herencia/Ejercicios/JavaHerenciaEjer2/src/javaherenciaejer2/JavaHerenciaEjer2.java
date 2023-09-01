@@ -34,10 +34,12 @@ public class JavaHerenciaEjer2 {
         {
             if(el instanceof Lavadora){
                 sumLav += ((Lavadora) el).precioFinalLavadora((Lavadora) el);
+                System.out.println(el.toString() + " precio final: "+ ((Lavadora) el).precioFinalLavadora((Lavadora) el));
             }
             
             if(el instanceof Televisor){
                 sumTel += ((Televisor) el).precioFinalTelevisor((Televisor) el);
+                System.out.println(el.toString()+" precio final: "+((Televisor) el).precioFinalTelevisor((Televisor) el));
             }
         }
         
