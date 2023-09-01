@@ -98,7 +98,7 @@ public class Televisor extends Electrodomestico{
 
     @Override
     public String toString() {
-        return "Televisor{" + "resolucion=" + resolucion + ", sintonizadorTDT=" + sintonizadorTDT + "Color= "+super.color+" Precio= "+super.precio;
+        return "Televisor{" + "resolucion=" + resolucion + ", sintonizadorTDT=" + sintonizadorTDT + "Color= "+super.color+" Precio= "+super.precio+ "precio=" + precio + ", color=" + color + ", consumoEnergetico=" + consumoEnergetico + ", peso=" + peso +"}";
     }
     
     

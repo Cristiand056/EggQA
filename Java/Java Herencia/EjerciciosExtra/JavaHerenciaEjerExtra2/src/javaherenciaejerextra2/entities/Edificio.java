@@ -38,8 +38,11 @@ public class Edificio {
         this.largo = largo;
     }
     
-    public Double calcularSupeeerficie(){
-        return 2*(ancho*largo+largo*alto+alto*ancho);
+    public Double calcularSuperficie(){
+        return ancho*largo;
+    }
+    public Double calcularArea(){
+        return calcularSuperficie()*alto;
     }
 
     @Override
