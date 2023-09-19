@@ -43,10 +43,18 @@ public class PersonaServicios {
         }      
     }
     public boolean esMayorDeEdad(Persona p){
-        if(p.getEdad() >= 18){
+        try{
+            if(p.getEdad() >= 18){
             return true;
-        }else{
-            return false;
+            }else{
+                return false;
+            }
         }
+        catch(Exception e)
+        {
+               System.out.println("Valor nulo");
+               return false;
+        }
+      
     }
 }
