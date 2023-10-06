@@ -223,4 +223,4 @@
 /Java/jenkins/test1/JavaJenkinsTest1/build/
 /Java/Maven/prueba/mavenprueba1/target/
 /Java/Selenium/pruebas/SeleniumTest/target/
-/Java/Selenium/pruebas/SeleniumTest/target/src/main/java/utils/chromedriver.exe
+/Java/Selenium/pruebas/SeleniumTest/src/main/java/utils/chromedriver.exe
